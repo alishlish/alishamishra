@@ -1,56 +1,125 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alisha Mishra</title>
-    <!-- Importing Icons and CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#resume">Resume</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-        <h1>Alisha Mishra</h1>
-        <p class="tagline">Aspiring Data Scientist | Student | Designer</p>
-    </header>
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto:wght@400&display=swap');
 
-    <section id="about" class="about">
-        <div class="box about-container">
-            <img src="profilepic.jpeg" alt="Profile Picture" class="profile-pic">
-            <h2>About Me</h2>
-            <p class="bio">
-                I’m a second-year Data Science major at the University of California, Irvine. I am dedicated to exploring how AI systems can enhance security protocols. In the future, I hope to use my data-driven skills at the intersection of AI and cybersecurity in the aerospace industry.
-            </p>
-        </div>
-    </section>
+/* General Body Styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f9f9f9; /* Light background */
+    color: #333333; /* Dark gray text */
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
 
-    <section id="contact">
-        <div class="box">
-            <h2>Contact Me</h2>
-            <div class="icons social-icons">
-                <a href="mailto:alishamishra082@gmail.com" title="Email">
-                    <i class="fas fa-envelope"></i>
-                </a>
-                <a href="https://github.com/alishlish" title="GitHub">
-                    <i class="fab fa-github"></i>
-                </a>
-                <a href="https://www.linkedin.com/in/alishamishra23" title="LinkedIn">
-                    <i class="fab fa-linkedin"></i>
-                </a>
-            </div>
-        </div>
-    </section>
+/* Heading Styles */
+h1, h2, h3 {
+    font-family: 'Poppins', sans-serif;
+    color: #d6c1e8; /* Lavender */
+    margin-bottom: 10px;
+}
 
-    <footer>
-        <p>© 2024 Alisha Mishra. All rights reserved.</p>
-    </footer>
-</body>
-</html>
+/* Header Section */
+header {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #e8d1f0; /* Light lilac background */
+    box-shadow: 0 4px 8px rgba(214, 193, 232, 0.2); /* Soft lavender shadow */
+}
+
+header h1 {
+    font-size: 36px;
+    margin: 0;
+}
+
+header p {
+    font-size: 18px;
+    color: #333;
+}
+
+/* About Section */
+.about {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 28px;
+    color: #c2c6f7; /* Periwinkle */
+}
+
+.about p {
+    font-size: 16px;
+    color: #666666; /* Lighter gray for body text */
+    margin: 20px auto;
+    max-width: 700px;
+}
+
+/* Button Styling */
+button {
+    background-color: #d6c1e8; /* Lavender */
+    color: #fff;
+    border: none;
+    border-radius: 12px;
+    padding: 10px 20px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: #c2c6f7; /* Periwinkle on hover */
+    transform: scale(1.05); /* Slight hover scale */
+}
+
+/* Social Media Icons */
+.icons {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+}
+
+.icons a {
+    color: #333333; /* Dark gray */
+    font-size: 24px;
+    margin: 0 15px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.icons a:hover {
+    color: #d6c1e8; /* Lavender hover effect */
+    transform: scale(1.2); /* Slightly larger hover */
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #f9f9f9;
+    color: #666666; /* Lighter gray */
+}
+
+/* Box/Section Styling */
+.box {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(214, 193, 232, 0.2); /* Lavender shadow */
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 28px;
+    }
+    
+    header p {
+        font-size: 16px;
+    }
+    
+    .about h2 {
+        font-size: 24px;
+    }
+}
